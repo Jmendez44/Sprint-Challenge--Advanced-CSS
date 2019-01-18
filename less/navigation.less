@@ -2,7 +2,7 @@
 
 .main-navigation {
     width: 100%;
-    height: 90px;
+    height: 100px;
     background-color: @nav-bg;
     position: fixed;
 
@@ -12,18 +12,33 @@
         justify-content: space-around;
         flex-direction: column;
 
+        // @media @phone {
+            
+            
+           
+        //   }
+
+          .logo-heading {
+            @media @phone {
+              font-size: 4rem;
+            }
+          }
+
         .nav {
-            width: 350px;
+            
             display: flex;
             justify-content: space-evenly;
 
             a{
+                
+                margin: 0px 17px;
                 text-decoration: none;
                 font-size: 1.5em;
+
+                a:visited { text-decoration: none; color:red; }
             }
         }
     }
-
 }
 
 
