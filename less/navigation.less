@@ -39,38 +39,32 @@
 
                 // a:visited { text-decoration: none; color:red; }
 
-                // a::before {
-                //     content: '';
-                //     position: absolute;
-                //     z-index: -1;
-                //     width: 36%;
-                //     transform: scaleX(0);
-                //     height: 2px;
-                //     bottom: 0;
-                //     left: 1;
-                //     background-color: #F33910;
-                //     transform-origin: bottom right;
-                //     transition: transform 0.25s ease-out;
-                // }
-                
-                // // header .products::before {
-                // //     width: 46%;  
-                // // }
-                
-                // // header .blog::before {
-                // //     width: 30%;  
-                // // }
-                
-                // // header .contact::before {
-                // //     width: 43%;  
-                // // }
-                
-                
-                // a:hover::before {
-                //     transform: scaleX(1);
-                //     transform-origin: bottom left;
-                // } 
+
             }
         }
     }
+}
+
+.nav {
+    a::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 45px;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 1;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+
+
+
+    a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    } 
 }
